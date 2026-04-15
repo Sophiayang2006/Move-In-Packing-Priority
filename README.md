@@ -6,9 +6,7 @@ I made an app to help decide which boxes to unpack first when moving into a new 
 I chose Quick Sort because it works well for comparing scores and is fast for small lists like this. It also swaps items in place, so it is easier to show how the list changes step by step. The algorithm picks a middle item as a pivot and compares other items to it to move them into the right place. I made my own Quick Sort and did not use built-in sorting like sort() or sorted() because the assignment says we have to implement it ourselves. 
 ## Demo (video/gif/screenshot of at least one run)
 
-
-
-
+https://github.com/user-attachments/assets/bd4cf295-a1cb-4130-93f5-37f664019043
 
 ## Problem Breakdown & Computational Thinking (include a flowchart + the 4 pillars as brief bullets)
 Problem Decomposition 
@@ -89,12 +87,33 @@ Constraints:
   - Each item must have 4 parts 
   - Weight, fragility, and priority must be integers from 1 to 10 
   - At least 2 items are needed 
-  - The list is small, so quicksort works well 
+  - The list is small, so quicksort works well
+---
+Flowchart 
+<img width="808" height="1077" alt="Untitled (Draft)" src="https://github.com/user-attachments/assets/0a28c26a-c5ba-48da-812b-7b03cb068168" />
 
-## Steps to Run (local) + requirements.txt
+
+## Steps to Run (local)
+
+Step 1: Download Python from: https://www.python.org/downloads/
+
+Step 2: Open a terminal and verify that Python is installed by running python --version in the terminal
+
+Step 3: Install Gradio
+
+Step 4: Download app.py from the GitHub repo
+
+Step 5: In the terminal, run python app.py
+
+Step 6: While the terminal is open, open https://localhost:7860 in your browser
+
+Step 7: Run the visualization
+## Requirements
+gradio>=4.0.0
+matplotlib==3.10.1
 
 ## Hugging Face Link
-
+https://huggingface.co/spaces/sofhyia/Move-In-Packing-Priority
 ## Testing (what you tried + edge cases)
 Edge Cases 
   - Only 1 item -> cannot sort 
