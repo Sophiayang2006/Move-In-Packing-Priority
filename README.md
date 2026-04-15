@@ -6,6 +6,10 @@ I made an app to help decide which boxes to unpack first when moving into a new 
 I chose Quick Sort because it works well for comparing scores and is fast for small lists like this. It also swaps items in place, so it is easier to show how the list changes step by step. The algorithm picks a middle item as a pivot and compares other items to it to move them into the right place. I made my own Quick Sort and did not use built-in sorting like sort() or sorted() because the assignment says we have to implement it ourselves. 
 ## Demo (video/gif/screenshot of at least one run)
 
+
+
+
+
 ## Problem Breakdown & Computational Thinking (include a flowchart + the 4 pillars as brief bullets)
 Problem Decomposition 
 1. Read each item's name, weight, fragility, and priority from the text box 
