@@ -26,7 +26,9 @@ Problem Decomposition
 Instead of showing the sorting while it is happening, the program saves all the steps first and then plays them back for the user. 
 ---
 Pattern Recognition 
+
 This is a compare and swap problem 
+
 - Pattern: Pick a pivot, compare items, and move them left or right 
 - Similar to sorting cards in your hand or lining people up by heights 
 - Idea: 
@@ -36,54 +38,75 @@ This is a compare and swap problem
   - Each time, the part being sorted gets smaller until everything is in the right place
 ---
 Abstraction 
+
 Focus on: 
+
   - Which item is the pivot
   - Which two items are being compared 
   - When two items are being swapped 
   - The part of the list being sorted right now 
-  - The final sorted order 
+  - The final sorted order
+    
 Show it by: 
+
   - A bar chart for all item scores 
   - Different colors for pivot, compare, swap, and done
   - A status message that explains each step in simple words 
-  - A final ranked table after sorting finishes 
+  - A final ranked table after sorting finishes
+
 Ignore: 
+
   - The recursion is happening inside the code 
   - Memory addresses and other computer details 
   - Extra calculations in the background 
-  - How the GUI stores data between button clicks 
+  - How the GUI stores data between button clicks
+
 Important: The user does not need to understand hard computer science words. The colors and messages make the sorting easy to follow. 
+
 ---
+
 Algorithmic Thinking 
+
 Inputs: 
+
   - A multiline string typed into a text box 
   - Each line is: label, weight, fragility, priority
   - At least 2 items are needed
-  - The numbers must be from 1 to 10 
+  - The numbers must be from 1 to 10
+
 Data types/ Data Structures : 
+
   - The input starts as a string 
   - Each item is stored as a dictionary with label, weight, fragility, and priority
   - All items are stored in a list 
   - Each saved sorting step is also stored as a dictionary 
-  - All steps are stored in a list of step dictionaries. 
+  - All steps are stored in a list of step dictionaries.
+
 Processing: 
+
   - Check the input is correct 
   - Calculate scores from each item 
   - Run quick sort step by step 
   - Save pivot, compare, and swap as a step
   - Send those steps to the GUI for playback
+
 Output: 
+
   - A bar chart showing items being sorted 
   - Colors to show what is happening 
   - A message explaining each step 
-  - A final sorted table of all items and scores 
+  - A final sorted table of all items and scores
+
 GUI Flow: 
+
   - The user types the items into the text box 
   - The user presses sort 
   - The program checks the input and sorts the items 
   - The GUI shows the steps one by one 
-  - The user can step forward, backward, or auto-play 
+  - The user can step forward, backward, or auto-play
+
 Constraints: 
+
   - Each item must have 4 parts 
   - Weight, fragility, and priority must be integers from 1 to 10 
   - At least 2 items are needed 
