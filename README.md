@@ -182,3 +182,11 @@ I wanted to see what happens when the list is already in order before using the 
 ---
 
 ## Author & Acknowledgment (sources + AI use, if any)
+
+Author: Sophia Yang Section: 001 
+
+Sources: CISC 121 Notes 
+
+####AI WAS USED (LEVEL 4): Claude was used to help me understand the problem better and improve my code. First, I wrote a draft version of my program. Then I asked Claude questions to help me understand how QuickSort works and how to fix problems in my code. It also helped me turn my ideas from the 4 pillars into a working program. Claude helped generate a cleaner final version of the code based on my draft, but I reviewed all the code myself, made changes, and made sure I understood how it worked before using it. 
+
+https://claude.ai/share/e44119c0-c171-4085-808b-814b8a057b7b
