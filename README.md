@@ -1,0 +1,100 @@
+# Move-In-Packing-Priority-QuickSort
+
+## Chosen Problem (1-2 sentences)
+I made an app to help decide which boxes to unpack first when moving into a new house. Each box has a name, weight, fragility, and priority. I use a simple formula to give each box a score so I can compare them. The app checks that each item has 4 parts, that the numbers are between 1 and 10, and there are at least 2 items before sorting. The data does not need to be sorted before. On the screen, the user sees bars for each item, with the bar size indicating the score. Colors indicate what is happening: blue is normal, pink is the pivot, gold indicates comparison, purple indicates swapping, and green indicates done. 
+## Chosen Algorithm (name + why it fits)
+I chose Quick Sort because it works well for comparing scores and is fast for small lists like this. It also swaps items in place, so it is easier to show how the list changes step by step. The algorithm picks a middle item as a pivot and compares other items to it to move them into the right place. I made my own Quick Sort and did not use built-in sorting like sort() or sorted() because the assignment says we have to implement it ourselves. 
+## Demo (video/gif/screenshot of at least one run)
+
+## Problem Breakdown & Computational Thinking (include a flowchart + the 4 pillars as brief bullets)
+Problem Decomposition 
+1. Read each item's name, weight, fragility, and priority from the text box 
+2. Split each line into 4 parts
+3. Check that every line has all 4 parts 
+4. Make sure weight, fragility, and priority are numbers from 1 to 10 
+5. Give each item one score using the formula 
+6. Store all items in a working list 
+7. Pick a middle item as the pivot 
+8. Compare other items to the pivot score 
+9. Swap items if they are on the wrong side 
+10. Repeat this on smaller parts of the list
+11. Save every pivot, compare, and swap step 
+12. Show the saved steps in the chart 
+13. Display the final sorted list at the end
+Instead of showing the sorting while it is happening, the program saves all the steps first and then plays them back for the user. 
+---
+Pattern Recognition 
+This is a compare and swap problem 
+- Pattern: Pick a pivot, compare items, and move them left or right 
+- Similar to sorting cards in your hand or lining people up by heights 
+- Idea: 
+  - Higher score items move to the left 
+  - Lower score items move to the right 
+  - The same compare and swap steps happen again and again
+  - Each time, the part being sorted gets smaller until everything is in the right place
+---
+Abstraction 
+Focus on: 
+  - Which item is the pivot
+  - Which two items are being compared 
+  - When two items are being swapped 
+  - The part of the list being sorted right now 
+  - The final sorted order 
+Show it by: 
+  - A bar chart for all item scores 
+  - Different colors for pivot, compare, swap, and done
+  - A status message that explains each step in simple words 
+  - A final ranked table after sorting finishes 
+Ignore: 
+  - The recursion is happening inside the code 
+  - Memory addresses and other computer details 
+  - Extra calculations in the background 
+  - How the GUI stores data between button clicks 
+Important: The user does not need to understand hard computer science words. The colors and messages make the sorting easy to follow. 
+---
+Algorithmic Thinking 
+Inputs: 
+  - A multiline string typed into a text box 
+  - Each line is: label, weight, fragility, priority
+  - At least 2 items are needed
+  - The numbers must be from 1 to 10 
+Data types/ Data Structures : 
+  - The input starts as a string 
+  - Each item is stored as a dictionary with label, weight, fragility, and priority
+  - All items are stored in a list 
+  - Each saved sorting step is also stored as a dictionary 
+  - All steps are stored in a list of step dictionaries. 
+Processing: 
+  - Check the input is correct 
+  - Calculate scores from each item 
+  - Run quick sort step by step 
+  - Save pivot, compare, and swap as a step
+  - Send those steps to the GUI for playback
+Output: 
+  - A bar chart showing items being sorted 
+  - Colors to show what is happening 
+  - A message explaining each step 
+  - A final sorted table of all items and scores 
+GUI Flow: 
+  - The user types the items into the text box 
+  - The user presses sort 
+  - The program checks the input and sorts the items 
+  - The GUI shows the steps one by one 
+  - The user can step forward, backward, or auto-play 
+Constraints: 
+  - Each item must have 4 parts 
+  - Weight, fragility, and priority must be integers from 1 to 10 
+  - At least 2 items are needed 
+  - The list is small, so quicksort works well 
+
+## Steps to Run (local) + requirements.txt
+
+## Hugging Face Link
+
+## Testing (what you tried + edge cases)
+Edge Cases 
+  - Only 1 item -> cannot sort 
+  - Wrong input -> show error 
+  - All items same score -> order may not change 
+  - Already sorted -> still runs but faster 
+## Author & Acknowledgment (sources + AI use, if any)
