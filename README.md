@@ -1,12 +1,20 @@
 # Move-In-Packing-Priority-QuickSort
 
+---
+
 ## Chosen Problem (1-2 sentences)
 I made an app to help decide which boxes to unpack first when moving into a new house. Each box has a name, weight, fragility, and priority. I use a simple formula to give each box a score so I can compare them. The app checks that each item has 4 parts, that the numbers are between 1 and 10, and there are at least 2 items before sorting. The data does not need to be sorted before. On the screen, the user sees bars for each item, with the bar size indicating the score. Colors indicate what is happening: blue is normal, pink is the pivot, gold indicates comparison, purple indicates swapping, and green indicates done. 
+
+---
+
+
 ## Chosen Algorithm (name + why it fits)
 I chose Quick Sort because it works well for comparing scores and is fast for small lists like this. It also swaps items in place, so it is easier to show how the list changes step by step. The algorithm picks a middle item as a pivot and compares other items to it to move them into the right place. I made my own Quick Sort and did not use built-in sorting like sort() or sorted() because the assignment says we have to implement it ourselves. 
 ## Demo (video/gif/screenshot of at least one run)
 
 https://github.com/user-attachments/assets/bd4cf295-a1cb-4130-93f5-37f664019043
+
+---
 
 ## Problem Breakdown & Computational Thinking (include a flowchart + the 4 pillars as brief bullets)
 Problem Decomposition 
@@ -117,6 +125,7 @@ Flowchart
 
 <img width="808" height="1077" alt="Untitled (Draft)" src="https://github.com/user-attachments/assets/0a28c26a-c5ba-48da-812b-7b03cb068168" />
 
+---
 
 ## Steps to Run (local)
 
@@ -133,16 +142,27 @@ Step 5: In the terminal, run python app.py
 Step 6: While the terminal is open, open https://localhost:7860 in your browser
 
 Step 7: Run the visualization
+
+---
+
 ## Requirements
 gradio>=4.0.0
 matplotlib==3.10.1
 
+---
+
 ## Hugging Face Link
 https://huggingface.co/spaces/sofhyia/Move-In-Packing-Priority
+
+---
+
+
 ## Testing (what you tried + edge cases)
-Edge Cases 
-  - Only 1 item -> cannot sort 
-  - Wrong input -> show error 
-  - All items same score -> order may not change 
-  - Already sorted -> still runs but faster 
+
+Test 1: Smallest Input Test 
+
+I wanted to see if the app works when I only put in 2 items, which is the smallest amount it can take. I thought the app would still work, make a chart, and sort the 2 items properly. The app worked fine; it took both items and sorted them using QuickSort. The app works well even with only 2 items.
+
+<img width="1512" height="982" alt="Screenshot 2026-04-15 at 5 19 37 PM" src="https://github.com/user-attachments/assets/c526b2f8-0376-47f1-8d76-c353a3896d52" />
+
 ## Author & Acknowledgment (sources + AI use, if any)
