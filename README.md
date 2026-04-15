@@ -159,10 +159,26 @@ https://huggingface.co/spaces/sofhyia/Move-In-Packing-Priority
 
 ## Testing (what you tried + edge cases)
 
-Test 1: Smallest Input Test 
+- Test 1: Smallest Input Test 
 
 I wanted to see if the app works when I only put in 2 items, which is the smallest amount it can take. I thought the app would still work, make a chart, and sort the 2 items properly. The app worked fine; it took both items and sorted them using QuickSort. The app works well even with only 2 items.
 
 <img width="1512" height="982" alt="Screenshot 2026-04-15 at 5 19 37 PM" src="https://github.com/user-attachments/assets/c526b2f8-0376-47f1-8d76-c353a3896d52" />
+
+
+- Test 2: All Scores are the same 
+
+I wanted to see what happens if every item has the same score. I was checking if the sorting still works and doesn't break. I thought the app would still work, not crash, and just compare the items, and it did just that. 
+
+<img width="1512" height="982" alt="Screenshot 2026-04-15 at 7 05 18 PM" src="https://github.com/user-attachments/assets/2e146c77-d12b-4709-914c-e850f08bda3b" />
+
+
+- Test 3: Already sorted list
+
+I wanted to see what happens when the list is already in order before using the QuickSort method. I thought the program would not need to change anything because the list was already sorted. The program mostly just checked the items and pricked pivot points. It did not swap anything. The order at the end was the same as the start.
+
+<img width="1512" height="982" alt="Screenshot 2026-04-15 at 7 08 29 PM" src="https://github.com/user-attachments/assets/44adadd2-75eb-464a-a6ca-2a60b879f4f3" />
+
+---
 
 ## Author & Acknowledgment (sources + AI use, if any)
